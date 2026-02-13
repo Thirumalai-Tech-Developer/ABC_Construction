@@ -130,11 +130,11 @@ export function Navbar() {
                 </nav>
                 <div className="flex flex-col gap-4">
                   <a 
-                    href="tel:+971500000000" 
+                    href="tel:+971 55 471 2353" 
                     className="flex items-center gap-2 text-primary font-medium"
                   >
                     <Phone className="h-4 w-4 text-accent" />
-                    +971 50 000 0000
+                    +971 55 471 2353
                   </a>
                   <Link href="/contact">
                     <Button className="w-full">Get a Quote</Button>
