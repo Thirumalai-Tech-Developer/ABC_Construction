@@ -33,7 +33,7 @@ export function WhyChooseUs() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionTitle 
-          title="Why Choose ApexBuild" 
+          title="Why Choose ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC" 
           subtitle="Our Commitment" 
           align="center"
           dark

@@ -24,7 +24,7 @@ export function ManpowerPreview() {
             />
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               We understand that the backbone of any successful project is a skilled and reliable workforce. 
-              ApexBuild provides top-tier manpower supply services, ensuring you have the right people for the job, exactly when you need them.
+              ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC provides top-tier manpower supply services, ensuring you have the right people for the job, exactly when you need them.
             </p>
             
             <ul className="space-y-4 mb-8">

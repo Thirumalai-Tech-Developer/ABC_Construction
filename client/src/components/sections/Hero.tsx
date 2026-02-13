@@ -35,7 +35,7 @@ export function Hero() {
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
               From groundbreaking infrastructure projects to skilled workforce solutions, 
-              ApexBuild delivers excellence at every level of the construction industry.
+              ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC delivers excellence at every level of the construction industry.
             </p>
           </motion.div>
 
