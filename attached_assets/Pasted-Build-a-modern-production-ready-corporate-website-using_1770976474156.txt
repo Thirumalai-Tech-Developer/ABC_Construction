@@ -1,0 +1,224 @@
+Build a modern, production-ready corporate website using:
+
+Tech Stack:
+- Vite + React
+- Tailwind CSS
+- React Router DOM
+- Framer Motion
+- React Icons
+
+Company Name:
+ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC
+
+Business Type:
+Dubai-based Construction & Skilled Manpower Supply Company.
+
+IMPORTANT:
+- Do NOT copy design or content from aromacontracting.com.
+- Use it only as structural inspiration.
+- Design must be unique, modern, and premium.
+- Maintain clean architecture and proper component separation.
+
+----------------------------------------------------
+
+PROJECT STRUCTURE REQUIREMENT (MANDATORY)
+
+Use this folder structure:
+
+src/
+  components/
+    layout/
+      Navbar.jsx
+      Footer.jsx
+      ScrollToTop.jsx
+      WhatsAppButton.jsx
+    ui/
+      Button.jsx
+      SectionTitle.jsx
+    sections/
+      Hero.jsx
+      ServicesPreview.jsx
+      ManpowerPreview.jsx
+      WhyChooseUs.jsx
+      CTASection.jsx
+  pages/
+      Home.jsx
+      About.jsx
+      Services.jsx
+      Manpower.jsx
+      Careers.jsx
+      Contact.jsx
+  data/
+      servicesData.js
+      manpowerData.js
+  assets/
+      images/
+  App.jsx
+  main.jsx
+
+Do NOT mix everything inside one file.
+Use reusable components properly.
+
+----------------------------------------------------
+
+DESIGN STYLE
+
+- Minimal
+- White / light background
+- Deep blue accent color
+- Professional corporate typography
+- Smooth animations
+- Clean spacing
+- Premium Dubai contractor feel
+
+----------------------------------------------------
+
+PAGES REQUIRED
+
+- Home
+- About Us
+- Services
+- Manpower
+- Careers
+- Contact
+
+----------------------------------------------------
+
+HOME PAGE SECTIONS (Order Strictly Follow)
+
+1. Hero
+   - Background image
+   - Headline:
+     "Building Excellence. Supplying Skilled Workforce."
+   - Subheadline
+   - 2 CTA buttons
+
+2. About Preview
+
+3. Services Preview (6 service cards)
+
+4. Manpower Preview (grid layout)
+
+5. Why Choose Us
+
+6. CTA Section
+
+7. Footer
+
+----------------------------------------------------
+
+SERVICES PAGE
+
+Detailed contracting services:
+- Building Construction
+- Civil Engineering
+- Electrical Installation
+- Plumbing & Drainage
+- Renovation & Maintenance
+- Interior Fit-Out
+
+Each section must use mapped data from servicesData.js
+
+----------------------------------------------------
+
+MANPOWER PAGE
+
+Use manpowerData.js for dynamic card rendering.
+
+Include:
+- Introduction
+- Categories Grid
+- Why Our Workforce
+- CTA
+
+----------------------------------------------------
+
+CAREERS PAGE
+
+Simple layout (similar to Contact page).
+
+Application Form Fields:
+- Full Name
+- Email
+- Phone
+- Position (Dropdown)
+- Message
+- CV Upload (.pdf, .doc, .docx, max 5MB)
+
+Form must:
+- Use controlled React state
+- Validate required fields
+- Show error messages
+- Show success message on submit
+
+----------------------------------------------------
+
+CONTACT PAGE
+
+- Contact form
+- Google Maps embed
+- Company details section
+
+----------------------------------------------------
+
+GLOBAL FEATURES
+
+Navbar:
+- Sticky
+- Transparent on hero
+- Solid on scroll
+- Mobile hamburger menu
+
+Footer:
+- Quick links
+- Contact info
+- Copyright
+
+ScrollToTop component
+
+Dark Mode toggle (optional but functional)
+
+Animated counters in About or Home
+
+Smooth page transitions using Framer Motion
+
+----------------------------------------------------
+
+WHATSAPP FLOATING BUTTON (GLOBAL)
+
+- Bottom-right fixed
+- Circular green
+- Pulse animation
+- Hover scale effect
+- High z-index
+- Tooltip: "Chat with us"
+- aria-label="Chat on WhatsApp"
+
+On click:
+https://wa.me/971500000000?text=Hello%20I%20am%20interested%20in%20your%20services
+
+Must be included inside main layout so visible on all pages.
+
+----------------------------------------------------
+
+TECHNICAL STANDARDS
+
+- Fully responsive
+- SEO meta tags in each page
+- Proper routing setup
+- Clean Tailwind utility usage
+- No inline styles
+- No unnecessary comments
+- Production-ready code
+
+----------------------------------------------------
+
+Generate:
+
+1. Full folder structure
+2. Tailwind config
+3. Routing setup
+4. All reusable components
+5. All pages
+6. Data files
+7. Placeholder images
