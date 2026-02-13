@@ -21,7 +21,7 @@ export const manpowerCategories = [
   },
   {
     id: "equipment",
-    title: "Heavy Equipment & Operators",
+    title: "Equipment & Operators",
     description: "Experienced operators and modern machinery for efficient construction execution.",
     icon: Truck
   }

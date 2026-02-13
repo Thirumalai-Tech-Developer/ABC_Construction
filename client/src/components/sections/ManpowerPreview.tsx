@@ -43,7 +43,7 @@ export function ManpowerPreview() {
               ))}
             </ul>
 
-            <Link href="/manpower">
+            <Link href="/construction">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Explore construction & manpower Services
               </Button>

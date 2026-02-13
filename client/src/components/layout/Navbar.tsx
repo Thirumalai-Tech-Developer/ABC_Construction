@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  // { href: "/manpower", label: "Manpower" },
+  { href: "/construction", label: "Construction" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
@@ -90,7 +90,7 @@ export function Navbar() {
               )}
             >
               <Phone className="h-4 w-4 text-accent" />
-              +971 50 000 0000
+              +971 55 471 2353
             </a>
             <Link href="/contact">
               <Button 

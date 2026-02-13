@@ -15,7 +15,7 @@ import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
-import Manpower from "@/pages/Manpower";
+import Construction from "@/pages/Construction";
 import Careers from "@/pages/Careers";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
@@ -29,7 +29,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
-        <Route path="/manpower" component={Manpower} />
+        <Route path="/construction" component={Construction} />
         <Route path="/careers" component={Careers} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />

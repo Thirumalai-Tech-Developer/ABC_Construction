@@ -50,8 +50,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Our Location</h3>
-                  <a href="https://maps.app.goo.gl/78LTDd1xzZbdwtfu9">
-                    <p className="text-muted-foreground">Office No. 101-182, Hassan Ibrahim Al Fardan Real Estate<br/>Al Rifaa - Dubai - UAE</p>
+                  <a href="https://maps.app.goo.gl/SjpvNs9aaSX6T1jLA">
+                    <p className="text-muted-foreground">Al Zahra Techno Center<br/>Dubai - UAE</p>
                   </a>
                 </div>
               </div>
@@ -64,8 +64,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Phone Number</h3>
-                  <p className="text-muted-foreground">+971 4 000 0000</p>
-                  <p className="text-muted-foreground">+971 50 000 0000</p>
+                  <p className="text-muted-foreground">+971 55 471 2353</p>
+                  {/* <p className="text-muted-foreground">+971 50 000 0000</p> */}
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Email Address</h3>
-                  <p className="text-muted-foreground">bala@abccont.com</p>
+                  {/* <p className="text-muted-foreground">bala@abccont.com</p> */}
                   <p className="text-muted-foreground">info@abccont.com</p>
                 </div>
               </div>
@@ -185,11 +185,15 @@ export default function Contact() {
 
       {/* Map Embed Placeholder */}
       <div className="w-full h-[400px] bg-muted relative">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786539269224!2d55.2721877150069!3d25.197197083896576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e511dde18628!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1620000000000!5m2!1sen!2sae" 
-          className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500" 
+        <iframe
+          src="https://www.google.com/maps?q=25.2592915,55.2933945&hl=en&z=17&output=embed"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
           loading="lazy"
-        ></iframe>
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Al Zahra Techno Center Location"
+        />
       </div>
     </motion.div>
   );
