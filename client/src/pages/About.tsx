@@ -6,9 +6,9 @@ import { Target, Eye, Award } from "lucide-react";
 export default function About() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 20 }}
       className="pt-24 pb-20"
     >
       {/* Header */}
