@@ -1,7 +1,20 @@
-import { Link } from "wouter";
-import { HardHat, MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { useState, useEffect } from "react";
+import logo from "@/images/logo.png"
 
 export function Footer() {
+  const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,9 +22,10 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="bg-accent p-2 rounded-lg">
-                <HardHat className="h-6 w-6 text-white" />
-              </div>
+              <div className="bg-white p-2 rounded-full group-hover:bg-accent/90 transition-colors"
+            >
+              <img src={ logo } alt="logo" className="h-8 w-8" />
+            </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
                 ALSAHRAA ALSAMITAH <span className="text-accent">BUILDING CONTRACTING LLC</span>
               </span>

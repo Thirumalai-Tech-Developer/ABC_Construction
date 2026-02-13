@@ -1,28 +1,28 @@
-import { Users, Wrench, HardHat, Truck } from "lucide-react";
+import { Building2, Wrench, HardHat, Truck } from "lucide-react";
 
 export const manpowerCategories = [
   {
-    id: "skilled",
-    title: "Skilled Labor",
-    description: "Certified electricians, plumbers, carpenters, and masons ready for deployment.",
-    icon: Wrench
+    id: "construction",
+    title: "Building Construction",
+    description: "Complete residential, commercial, and industrial construction projects from start to finish.",
+    icon: Building2
   },
   {
-    id: "general",
-    title: "General Helpers",
-    description: "Hardworking general assistants for construction sites and facility management.",
-    icon: Users
-  },
-  {
-    id: "technical",
-    title: "Technical Staff",
-    description: "Site engineers, supervisors, and safety officers to manage operations.",
+    id: "civil",
+    title: "Civil Works",
+    description: "Concrete works, structural frameworks, foundations, and site development.",
     icon: HardHat
   },
   {
-    id: "operators",
-    title: "Machine Operators",
-    description: "Experienced heavy machinery operators for cranes, loaders, and excavators.",
+    id: "skilled",
+    title: "Skilled Workforce",
+    description: "Certified electricians, plumbers, carpenters, masons, and technicians.",
+    icon: Wrench
+  },
+  {
+    id: "equipment",
+    title: "Heavy Equipment & Operators",
+    description: "Experienced operators and modern machinery for efficient construction execution.",
     icon: Truck
   }
 ];

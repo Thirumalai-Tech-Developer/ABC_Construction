@@ -50,7 +50,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Our Location</h3>
-                  <p className="text-muted-foreground">P.O. Box 12345, Business Bay,<br/>Dubai, United Arab Emirates</p>
+                  <a href="https://maps.app.goo.gl/78LTDd1xzZbdwtfu9">
+                    <p className="text-muted-foreground">Office No. 101-182, Hassan Ibrahim Al Fardan Real Estate<br/>Al Rifaa - Dubai - UAE</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -75,8 +77,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Email Address</h3>
-                  <p className="text-muted-foreground">info@apexbuild.com</p>
-                  <p className="text-muted-foreground">sales@apexbuild.com</p>
+                  <p className="text-muted-foreground">bala@abccont.com</p>
+                  <p className="text-muted-foreground">info@abccont.com</p>
                 </div>
               </div>
             </div>

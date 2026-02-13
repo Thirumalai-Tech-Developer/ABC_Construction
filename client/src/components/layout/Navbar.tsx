@@ -2,14 +2,15 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import logo from "@/images/logo.png"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X, Phone, HardHat } from "lucide-react";
+import { Menu, X, Phone, HardHat, Building, Building2 } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/manpower", label: "Manpower" },
+  // { href: "/manpower", label: "Manpower" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
@@ -31,7 +32,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
         scrolled || location !== "/" 
-          ? "bg-white/95 backdrop-blur-md shadow-sm border-border py-2" 
+          ? "bg-white/45 backdrop-blur-md shadow-sm border-border py-2 rounded-full" 
           : "bg-transparent py-4"
       )}
     >
@@ -39,14 +40,23 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-accent p-2 rounded-lg group-hover:bg-accent/90 transition-colors">
-              <HardHat className="h-6 w-6 text-white" />
+            <div className={
+              cn(
+                "bg-white p-2 rounded-full group-hover:bg-accent/90 transition-colors",
+                scrolled || location !== "/" ? "bg-blue-200 bg-opacity-30 shadow-xl" : "bg-white bg-opacity-30 shadow-xl"
+              )
+            }>
+              <img src={ logo } alt="logo" className="h-8 w-8" />
             </div>
             <span className={cn(
-              "font-display font-bold text-xl tracking-tight",
+              "font-display font-bold text-xl tracking-tight p-0",
               scrolled || location !== "/" ? "text-primary" : "text-white"
             )}>
-              APEX<span className="text-accent">BUILD</span>
+              ALSAHRAA ALSAMITAH<br /><span className=
+              {cn(
+              "text-opacity-45 p-0 text-sm",
+              scrolled || location !== "/" ? "text-primary" : "text-black/60"
+            )}>Building Contracting LLC</span>
             </span>
           </Link>
 

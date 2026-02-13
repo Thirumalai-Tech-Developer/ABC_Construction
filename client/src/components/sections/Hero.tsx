@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import hero_image from "@/images/hero.png"
 
 export function Hero() {
   return (
@@ -10,11 +11,11 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         {/* Unsplash image of modern skyscraper construction */}
         <img 
-          src="https://pixabay.com/get/gf1d957d0aebdcb79a382234cc3999ea0b36c1048ac52089541c1b503909f99a7bd1a600eaa6238812afc2f1f8bf64aee7d8fbee99b692e80fc967f744c3fcca7_1280.jpg" 
+          src={ hero_image }
           alt="Modern Architecture Construction" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/20" />
       </div>
 
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-white">
@@ -24,8 +25,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-accent/20 border border-accent/40 text-accent text-sm font-semibold mb-6 backdrop-blur-sm">
-              Leading Construction & Manpower Partner
+            <span className="inline-block py-1 px-3 rounded-full bg- border border-green-300/90 text-green-300 text-sm font-semibold mb-6 backdrop-blur-sm">
+              Leading Contracting
             </span>
             <h1 className="font-display font-extrabold text-5xl md:text-7xl leading-tight mb-6 text-shadow-lg">
               Building Dreams <br/>
@@ -35,7 +36,7 @@ export function Hero() {
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
               From groundbreaking infrastructure projects to skilled workforce solutions, 
-              ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC delivers excellence at every level of the construction industry.
+              <span className="text-yellow-400">Alsahraa Alsamitah Building Contracting LLC</span> delivers excellence at every level of the construction industry.
             </p>
           </motion.div>
 

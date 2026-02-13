@@ -17,18 +17,25 @@ export function ManpowerPreview() {
             viewport={{ once: true }}
           >
             <SectionTitle 
-              title="Workforce Solutions" 
-              subtitle="Manpower Supply" 
+              title="Building Construction" 
+              subtitle="End-to-End Construction & Manpower Solutions" 
               align="left"
               className="mb-8"
             />
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We understand that the backbone of any successful project is a skilled and reliable workforce. 
-              ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC provides top-tier manpower supply services, ensuring you have the right people for the job, exactly when you need them.
+              At Alsahraa Alsamitah Building Contracting LLC, construction is our core strength. 
+              From foundation to finishing, we deliver high-quality residential, commercial, and 
+              industrial building projects. Our experienced construction teams, skilled labor, 
+              and technical experts ensure every project is completed safely, efficiently, 
+              and to the highest standards.
             </p>
-            
             <ul className="space-y-4 mb-8">
-              {["Strict Vetting Process", "Rapid Deployment", "Flexible Contracts", "Compliance with Labor Laws"].map((item, i) => (
+              {[
+                "Complete Building Construction",
+                "Civil & Structural Works",
+                "Skilled & Certified Workforce",
+                "On-Time Project Delivery"
+              ].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-accent flex-shrink-0" />
                   <span className="font-medium text-primary">{item}</span>
@@ -38,7 +45,7 @@ export function ManpowerPreview() {
 
             <Link href="/manpower">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Explore Manpower Services
+                Explore construction & manpower Services
               </Button>
             </Link>
           </motion.div>

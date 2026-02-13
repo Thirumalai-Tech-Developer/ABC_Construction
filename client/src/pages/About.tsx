@@ -14,7 +14,7 @@ export default function About() {
       {/* Header */}
       <section className="relative py-20 bg-muted/30 mb-20">
         <div className="container mx-auto px-4 text-center">
-          <SectionTitle title="About ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC" subtitle="Who We Are" align="center" />
+          <SectionTitle title="About Alsahraa Alsamitah Building Contracting LLC" subtitle="Who We Are" align="center" />
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
             A premier construction and manpower supply company dedicated to building excellence across the UAE.
           </p>
@@ -43,7 +43,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold font-display text-primary mb-6">Building a Legacy of Trust</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Founded with a vision to revolutionize the construction industry, ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC has grown from a small contractor to a full-service construction and manpower firm. Our journey is defined by a relentless pursuit of quality and a commitment to our clients' success.
+              Founded with a vision to revolutionize the construction industry, Alsahraa Alsamitah Building Contracting LLC has grown from a small contractor to a full-service construction and manpower firm. Our journey is defined by a relentless pursuit of quality and a commitment to our clients' success.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We specialize in delivering complex projects on time and within budget, leveraging our extensive network of skilled professionals and state-of-the-art technology.

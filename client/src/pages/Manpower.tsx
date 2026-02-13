@@ -3,6 +3,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { manpowerCategories } from "@/data/manpowerData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import skilled_work  from "@/images/workers.png"
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
 
@@ -80,7 +81,7 @@ export default function Manpower() {
             <div className="hidden lg:block">
               {/* Unsplash: Construction worker portrait */}
               <img 
-                src="https://images.unsplash.com/photo-1535732820275-9e99d47a18b9?q=80&w=1000&auto=format&fit=crop" 
+                src={skilled_work}
                 alt="Skilled Worker" 
                 className="rounded-xl shadow-2xl border-4 border-white/10"
               />
