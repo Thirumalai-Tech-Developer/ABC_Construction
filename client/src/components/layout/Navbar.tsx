@@ -83,7 +83,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="tel:+971500000000" 
+              href="tel:+971 55 471 2353" 
               className={cn(
                 "flex items-center gap-2 text-sm font-medium transition-colors",
                 scrolled || location !== "/" ? "text-primary" : "text-white"
