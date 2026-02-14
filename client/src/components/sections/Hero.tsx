@@ -28,12 +28,16 @@ export function Hero() {
             {/* <span className="inline-block py-1 px-3 rounded-full bg- border border-green-300/90 text-green-300 text-sm font-semibold mb-6 backdrop-blur-sm">
               Leading Contracting
             </span> */}
-            <h1 className="font-display font-extrabold text-5xl md:text-7xl leading-tight mb-6 text-shadow-lg">
-              Welcome <br/>
-              <span className="whitespace-nowrap bg-clip-text bg-gradient-to-r from-white to-white/70">
+            <h1 className="font-display font-extrabold leading-tight mb-6 text-shadow-lg">
+              <span className="block text-4xl md:text-5xl lg:text-6xl">
+                Welcome
+              </span>
+
+              <span className="block whitespace-nowrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-white to-white/70">
                 ALSAHRAA ALSAMITAH
               </span>
             </h1>
+
             {/* <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
               From groundbreaking infrastructure projects to skilled workforce solutions, 
               <span className="text-yellow-400">Alsahraa Alsamitah Building Contracting LLC</span> delivers excellence at every level of the construction industry.

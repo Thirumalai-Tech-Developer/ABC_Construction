@@ -43,7 +43,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold font-display text-primary mb-6">Building a Legacy of Trust</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Founded with a vision to revolutionize the construction industry, Alsahraa Alsamitah Building Contracting LLC has grown from a small contractor to a full-service construction and manpower firm. Our journey is defined by a relentless pursuit of quality and a commitment to our clients' success.
+              Founded with a vision to revolutionize the construction industry, Alsahraa Alsamitah Building Contracting LLC has grown from a small contractor to a full-service construction. Our journey is defined by a relentless pursuit of quality and a commitment to our clients' success.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We specialize in delivering complex projects on time and within budget, leveraging our extensive network of skilled professionals and state-of-the-art technology.

@@ -32,14 +32,14 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-primary-foreground/70 leading-relaxed max-w-xs">
-              Building the future with excellence, integrity, and innovation. Your trusted partner for construction and manpower solutions in the UAE.
+              Building the future with excellence, integrity, and innovation. Your trusted partner for construction solutions in the UAE.
             </p>
-            <div className="flex space-x-4 pt-2">
+            {/* <div className="flex space-x-4 pt-2">
               <a href="#" className="hover:text-accent transition-colors"><Facebook className="h-5 w-5" /></a>
               <a href="#" className="hover:text-accent transition-colors"><Twitter className="h-5 w-5" /></a>
               <a href="#" className="hover:text-accent transition-colors"><Linkedin className="h-5 w-5" /></a>
               <a href="#" className="hover:text-accent transition-colors"><Instagram className="h-5 w-5" /></a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

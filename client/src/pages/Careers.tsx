@@ -28,7 +28,7 @@ export default function Careers() {
       email: "",
       phone: "",
       position: "",
-      message: "",
+      message: undefined,
     },
   });
 
@@ -198,7 +198,7 @@ export default function Careers() {
                     <FormItem>
                       <FormLabel>Message (Optional)</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Tell us about yourself..." {...field} />
+                        <Textarea placeholder="Tell us about yourself..." {...field} value={field.value || ""} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

@@ -50,11 +50,32 @@ export default function Services() {
                 <div className="space-y-4">
                   <h4 className="font-bold text-primary">What we offer:</h4>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {/* Mock features based on service type */}
-                    {[1, 2, 3, 4].map((i) => (
+                    {(service.title === "Building Construction"
+                      ? [
+                          "Project Planning & Management",
+                          "Structural & Architectural Execution",
+                          "Quality Control & Safety Compliance",
+                          "On-Time & Budget Delivery",
+                        ]
+                      : service.title === "Civil Engineering"
+                      ? [
+                          "Infrastructure Development",
+                          "Road & Utility Construction",
+                          "Structural Analysis & Design",
+                          "Site Survey & Feasibility Studies",
+                        ]
+                      : service.title === "Renovation"
+                      ? [
+                          "Interior & Exterior Remodeling",
+                          "Structural Modifications",
+                          "Modernization & Upgrades",
+                          "Space Optimization Solutions",
+                        ]
+                      : []
+                    ).map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-accent" />
-                        <span>Professional Execution</span>
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>

@@ -8,6 +8,7 @@ export const services = [
     description: "Full-scale construction services for commercial, residential, and industrial projects with a focus on quality and safety.",
     // icon: HardHat,
     image: Construction
+    
   },
   {
     id: "civil",
