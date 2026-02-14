@@ -16,7 +16,7 @@ export default function About() {
         <div className="container mx-auto px-4 text-center">
           <SectionTitle title="About Alsahraa Alsamitah Building Contracting LLC" subtitle="Who We Are" align="center" />
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            A premier construction and manpower supply company dedicated to building excellence across the UAE.
+            A premier construction and contracting company dedicated to building excellence across the UAE.
           </p>
         </div>
       </section>

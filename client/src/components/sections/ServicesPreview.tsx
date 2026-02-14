@@ -32,9 +32,9 @@ export function ServicesPreview() {
                     alt={service.title} 
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 right-4 bg-white/90 p-3 rounded-lg z-20 shadow-sm">
+                  {/* <div className="absolute top-4 right-4 bg-white/90 p-3 rounded-lg z-20 shadow-sm">
                     <service.icon className="h-6 w-6 text-accent" />
-                  </div>
+                  </div> */}
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-display font-bold text-xl mb-3 text-primary group-hover:text-accent transition-colors">

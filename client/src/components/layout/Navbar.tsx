@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import logo from "@/images/logo.png"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X, Phone, HardHat, Building, Building2 } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -17,6 +17,7 @@ const NAV_LINKS = [
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -67,14 +68,14 @@ export function Navbar() {
                 key={link.href} 
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-accent relative py-2",
-                  location === link.href ? "text-accent font-semibold" : 
+                  "text-sm font-medium transition-colors hover:text-blue-950 relative py-2",
+                  location === link.href ? "text-blue-950 font-semibold" : 
                   (scrolled || location !== "/" ? "text-primary/80" : "text-white/90")
                 )}
               >
                 {link.label}
                 {location === link.href && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-950 rounded-full" />
                 )}
               </Link>
             ))}
@@ -106,7 +107,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className={cn("h-6 w-6", scrolled || location !== "/" ? "text-primary" : "text-white")} />
@@ -119,6 +120,7 @@ export function Navbar() {
                     <Link 
                       key={link.href} 
                       href={link.href}
+                      onClick={() => setOpen(false)}
                       className={cn(
                         "text-lg font-medium transition-colors hover:text-accent py-2 border-b border-border/50",
                         location === link.href ? "text-accent" : "text-primary/80"

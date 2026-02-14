@@ -22,9 +22,10 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="bg-white p-2 rounded-full group-hover:bg-accent/90 transition-colors"
+            {/* group-hover:bg-accent/90 */}
+              <div className="bg-white p-2 rounded-full transition-colors"
             >
-              <img src={ logo } alt="logo" className="h-8 w-8" />
+              <img src={ logo } alt="logo" className="h-8 w-20" />
             </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
                 ALSAHRAA ALSAMITAH <span className="text-accent">BUILDING CONTRACTING LLC</span>
@@ -57,10 +58,9 @@ export function Footer() {
           <div>
             <h3 className="font-display font-bold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">General Contracting</Link></li>
+              <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">Building Construction</Link></li>
               <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">Civil Engineering</Link></li>
-              <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">MEP Works</Link></li>
-              <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">Interior Fit-out</Link></li>
+              <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">Skilled Workforce</Link></li>
               <li><Link href="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">Renovation</Link></li>
             </ul>
           </div>
@@ -72,16 +72,16 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5 shrink-0" />
                 <span className="text-primary-foreground/70">
-                  P.O. Box 12345, Business Bay,<br />Dubai, United Arab Emirates
+                 Al Zahra Techno Center<br/>Dubai - UAE
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span className="text-primary-foreground/70">+971 4 000 0000</span>
+                <span className="text-primary-foreground/70">+971 55 471 2353</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
-                <span className="text-primary-foreground/70">info@alsahraalsamitah.com</span>
+                <span className="text-primary-foreground/70">info@abccont.com</span>
               </li>
             </ul>
           </div>

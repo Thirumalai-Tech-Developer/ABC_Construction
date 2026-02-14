@@ -6,14 +6,14 @@ export const services = [
     id: "construction",
     title: "Building Construction",
     description: "Full-scale construction services for commercial, residential, and industrial projects with a focus on quality and safety.",
-    icon: HardHat,
+    // icon: HardHat,
     image: Construction
   },
   {
     id: "civil",
     title: "Civil Engineering",
     description: "Expert civil engineering solutions including infrastructure development, roadworks, and structural analysis.",
-    icon: Ruler,
+    // icon: Ruler,
     image: Civil
   },
   // {
@@ -34,7 +34,7 @@ export const services = [
     id: "renovation",
     title: "Renovation",
     description: "Transforming spaces with structural modifications, modernization, and aesthetic upgrades.",
-    icon: Hammer,
+    // icon: Hammer,
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
   },
   // {

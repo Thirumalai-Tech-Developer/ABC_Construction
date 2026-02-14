@@ -18,12 +18,12 @@ export function ManpowerPreview() {
           >
             <SectionTitle 
               title="Building Construction" 
-              subtitle="End-to-End Construction & Manpower Solutions" 
+              subtitle="End-to-End Construction & Contracting" 
               align="left"
               className="mb-8"
             />
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At Alsahraa Alsamitah Building Contracting LLC, construction is our core strength. 
+              Alsahraa Alsamitah Building Contracting LLC, construction is our core strength. 
               From foundation to finishing, we deliver high-quality residential, commercial, and 
               industrial building projects. Our experienced construction teams, skilled labor, 
               and technical experts ensure every project is completed safely, efficiently, 
@@ -45,7 +45,7 @@ export function ManpowerPreview() {
 
             <Link href="/construction">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Explore construction & manpower Services
+                Explore construction & contracting Services
               </Button>
             </Link>
           </motion.div>

@@ -42,9 +42,6 @@ export default function Services() {
               
               <div className="flex-1 space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-accent/10 rounded-lg">
-                    <service.icon className="w-8 h-8 text-accent" />
-                  </div>
                   <h3 className="text-3xl font-display font-bold text-primary">{service.title}</h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">

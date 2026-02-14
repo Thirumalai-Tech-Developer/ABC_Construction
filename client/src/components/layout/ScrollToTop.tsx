@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const [location] = useLocation(); // 👈 detect route change
 
+  // 👇 Auto scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  // 👇 Show button when scrolling down
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
