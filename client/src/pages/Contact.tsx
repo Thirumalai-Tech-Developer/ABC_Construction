@@ -34,7 +34,7 @@ export default function Contact() {
     try {
       await emailjs.send(
         "service_mail_integration",
-        "template_5jhilht",
+        "template_8fqvofn",
         {
           from_name: data.name,
           from_email: data.email,
