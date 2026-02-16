@@ -25,7 +25,7 @@ export function Footer() {
             {/* group-hover:bg-accent/90 */}
               <div className="bg-white p-2 rounded-full transition-colors"
             >
-              <img src={ logo } alt="logo" className="h-8 w-20" />
+              <img src={ logo } alt="logo" className="h-5 w-14 sm:h-6 sm:w-6 md:h-7 md:w-18 lg:h-8 lg:w-28 object-contain" />
             </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
                 ALSAHRAA ALSAMITAH <span className="text-accent">BUILDING CONTRACTING LLC</span>
