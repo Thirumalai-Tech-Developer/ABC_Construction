@@ -3,6 +3,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { services } from "@/data/servicesData";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet";
 
 export default function Services() {
   return (

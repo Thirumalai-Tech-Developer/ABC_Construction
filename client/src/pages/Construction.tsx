@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import skilled_work  from "@/images/workers.png"
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function Construction() {
   return (

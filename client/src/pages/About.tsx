@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Award } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   return (

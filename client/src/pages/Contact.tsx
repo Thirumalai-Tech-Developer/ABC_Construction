@@ -9,9 +9,14 @@ import { Button } from "@/components/ui/button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   const { mutate, isPending } = useCreateInquiry();
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+
   
   const form = useForm<InsertInquiry>({
     resolver: zodResolver(insertInquirySchema),
@@ -23,11 +28,29 @@ export default function Contact() {
       message: "",
     },
   });
+  
 
-  const onSubmit = (data: InsertInquiry) => {
-    mutate(data, {
-      onSuccess: () => form.reset(),
-    });
+  const onSubmit = async (data: InsertInquiry) => {
+    try {
+      await emailjs.send(
+        "service_mail_integration",
+        "template_5jhilht",
+        {
+          from_name: data.name,
+          from_email: data.email,
+          phone: data.phone,
+          subject: data.subject,
+          message: data.message,
+        },
+        "cviIBISRrBx9a6vLI"
+      );
+
+       form.reset();
+        setStatus("success");
+      } catch (error) {
+        console.error("EmailJS Error:", error);
+        setStatus("error");
+    }
   };
 
   return (
@@ -194,6 +217,17 @@ export default function Contact() {
                   <Button type="submit" size="lg" className="w-full md:w-auto" disabled={isPending}>
                     {isPending ? "Sending..." : "Send Message"}
                   </Button>
+                  {status === "success" && (
+                    <p className="mt-4 text-green-600 font-medium">
+                      ✅ Message sent successfully!
+                    </p>
+                  )}
+
+                  {status === "error" && (
+                    <p className="mt-4 text-red-600 font-medium">
+                      ❌ Failed to send message. Please try again.
+                    </p>
+                  )}
                 </form>
               </Form>
             </div>

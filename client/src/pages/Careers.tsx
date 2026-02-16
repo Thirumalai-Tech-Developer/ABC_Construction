@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertApplicationSchema, type InsertApplication } from "@shared/schema";
-import { useCreateApplication } from "@/hooks/use-applications";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,6 +10,9 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { motion } from "framer-motion";
 import { Upload, Briefcase } from "lucide-react";
 import { z } from "zod";
+import { Helmet } from "react-helmet";
+import { useState } from "react";
+
 
 // Extend the schema for frontend validation (file object vs string filename)
 const formSchema = insertApplicationSchema.extend({
@@ -19,7 +21,10 @@ const formSchema = insertApplicationSchema.extend({
 });
 
 export default function Careers() {
-  const { mutate, isPending } = useCreateApplication();
+
+  const [status, setStatus] = useState<"success" | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,27 +37,18 @@ export default function Careers() {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    const formData = new FormData();
-    formData.append("fullName", values.fullName);
-    formData.append("email", values.email);
-    formData.append("phone", values.phone);
-    formData.append("position", values.position);
-    if (values.message) formData.append("message", values.message);
-    
-    // Append the file
-    if (values.cv && values.cv.length > 0) {
-      formData.append("cv", values.cv[0]);
-    }
-    
-    // We append a dummy filename for schema validation if needed, 
-    // though the backend should handle the file upload processing
-    formData.append("cvFilename", values.cv[0].name);
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setStatus(null);
+    setIsSubmitting(true);
 
-    mutate(formData, {
-      onSuccess: () => form.reset(),
-    });
+    // Simulate fake submission delay
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setStatus("success");
+      form.reset();
+    }, 1200);
   };
+
 
   return (
     <>
@@ -189,7 +185,7 @@ export default function Careers() {
                               <SelectValue placeholder="Select a position" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent>
+                          <SelectContent className="bg-slate-600">
                             <SelectItem value="Civil Engineer">Civil Engineer</SelectItem>
                             <SelectItem value="Project Manager">Project Manager</SelectItem>
                             <SelectItem value="Site Supervisor">Site Supervisor</SelectItem>
@@ -241,10 +237,14 @@ export default function Careers() {
                       </FormItem>
                     )}
                   />
-
-                  <Button type="submit" className="w-full" disabled={isPending}>
-                    {isPending ? "Submitting..." : "Submit Application"}
+                  <Button type="submit" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit Application"}
                   </Button>
+                  {status === "success" && (
+                    <p className="mt-4 text-green-600 font-medium text-center">
+                      ✅ Application submitted successfully!
+                    </p>
+                  )}
                 </form>
               </Form>
             </div>
