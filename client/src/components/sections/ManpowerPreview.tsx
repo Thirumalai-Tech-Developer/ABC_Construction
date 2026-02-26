@@ -10,31 +10,46 @@ export function ManpowerPreview() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <SectionTitle 
-              title="Building Construction" 
-              subtitle="End-to-End Construction & Contracting" 
+            <SectionTitle
+              title="Building Construction & Skilled Workforce in Dubai"
+              subtitle="End-to-End Construction & Contracting Solutions Across UAE"
               align="left"
               className="mb-8"
             />
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Alsahraa Alsamitah Building Contracting LLC, construction is our core strength. 
-              From foundation to finishing, we deliver high-quality residential, commercial, and 
-              industrial building projects. Our experienced construction teams, skilled labor, 
-              and technical experts ensure every project is completed safely, efficiently, 
-              and to the highest standards.
+
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <strong>ALSAHRAA ALSAMITAH BUILDING CONTRACTING LLC</strong> is a
+              trusted construction company in Dubai, UAE delivering complete
+              building construction, civil engineering, and manpower solutions.
+              From foundation to finishing, we execute residential, commercial,
+              and industrial projects with precision, safety, and efficiency.
             </p>
+
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Our experienced engineers, supervisors, and certified workforce
+              ensure every construction project meets UAE regulatory standards,
+              quality benchmarks, and strict timelines. Whether it’s structural
+              works, renovation, or full-scale contracting, we provide reliable
+              execution backed by technical expertise.
+            </p>
+
+            <h3 className="font-display font-bold text-xl mb-4">
+              Our Core Construction Capabilities
+            </h3>
+
             <ul className="space-y-4 mb-8">
               {[
-                "Complete Building Construction",
-                "Civil & Structural Works",
-                "Skilled & Certified Workforce",
-                "On-Time Project Delivery"
+                "Complete Residential & Commercial Building Construction",
+                "Civil, Structural & Infrastructure Works",
+                "Certified & Skilled Construction Workforce",
+                "Project Planning, Supervision & On-Time Delivery",
+                "Renovation & Interior Fit-Out Solutions"
               ].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-accent flex-shrink-0" />
@@ -43,9 +58,17 @@ export function ManpowerPreview() {
               ))}
             </ul>
 
+            <p className="text-muted-foreground mb-8">
+              As one of the emerging building contracting companies in Dubai,
+              we focus on delivering cost-effective, high-quality construction
+              services tailored to each client’s vision. Our integrated approach
+              ensures seamless coordination between manpower, materials, and
+              project management.
+            </p>
+
             <Link href="/construction">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Explore construction & contracting Services
+                Explore Our Construction & Contracting Services
               </Button>
             </Link>
           </motion.div>
@@ -63,8 +86,14 @@ export function ManpowerPreview() {
                 <div className="bg-white p-3 rounded-lg inline-block shadow-sm mb-4 group-hover:bg-accent group-hover:text-white transition-colors">
                   <cat.icon className="h-6 w-6" />
                 </div>
-                <h3 className="font-display font-bold text-lg mb-2">{cat.title}</h3>
-                <p className="text-sm text-muted-foreground">{cat.description}</p>
+
+                <h3 className="font-display font-bold text-lg mb-2">
+                  {cat.title}
+                </h3>
+
+                <p className="text-sm text-muted-foreground">
+                  {cat.description}
+                </p>
               </motion.div>
             ))}
           </div>

@@ -41,7 +41,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <img src={ logo } alt="logo" className="h-16 w-16" />
+            <div className={
+              cn(
+                "bg-white p-2 rounded-full group-hover:bg-white/90 transition-colors",
+                scrolled || location !== "/" ? "bg-blue-100 bg-opacity-30 shadow-xl" : "bg-white bg-opacity-30 shadow-xl"
+              )
+            }>
+              <img src={ logo } alt="logo" className="h-8 w-8" />
+            </div>
             <span className={cn(
               "font-display font-bold text-xl tracking-tight p-0",
               scrolled || location !== "/" ? "text-primary" : "text-white"
