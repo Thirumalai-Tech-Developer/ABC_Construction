@@ -25,7 +25,7 @@ export function Footer() {
             {/* group-hover:bg-accent/90 */}
               <div className="bg-white p-2 rounded-full transition-colors"
             >
-              <img src={ logo } alt="logo" className="h-8 w-8 sm:h-8 sm:w-8 md:h-10 md:w-20 lg:h-12 lg:w-28 object-contain" />
+              <img src={ logo } alt="logo" className="h-8 w-8 md:h-8 md:w-14 lg:h-8 lg:w-28 xl:h-10 xl:w-20 object-contain" />
             </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
                 ALSAHRAA ALSAMITAH <span className="text-accent">BUILDING CONTRACTING LLC</span>
@@ -72,7 +72,9 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5 shrink-0" />
                 <span className="text-primary-foreground/70">
-                 Al Zahra Techno Center<br/>Dubai - UAE
+                <a href="https://maps.app.goo.gl/SjpvNs9aaSX6T1jLA" target="_blank" rel="noopener noreferrer">
+                 Al Zahraa Techno Center - 101<br/>Dubai - UAE
+                </a>
                 </span>
               </li>
               <li className="flex items-center space-x-3">

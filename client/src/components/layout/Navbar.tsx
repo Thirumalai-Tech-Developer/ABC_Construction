@@ -47,7 +47,7 @@ export function Navbar() {
                 scrolled || location !== "/" ? "bg-blue-100 bg-opacity-30 shadow-xl" : "bg-white bg-opacity-30 shadow-xl"
               )
             }>
-              <img src={ logo } alt="logo" className="h-8 w-8" />
+              <img src={ logo } alt="logo" className="h-8 w-8 md:h-8 md:w-10 lg:h-8 lg:w-10 xl:h-10 xl:w-10" />
             </div>
             <span className={cn(
               "font-display font-bold text-xl tracking-tight p-0",
@@ -82,7 +82,7 @@ export function Navbar() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <a 
               href="tel:+971 55 471 2353" 
               className={cn(

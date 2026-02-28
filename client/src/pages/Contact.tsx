@@ -91,7 +91,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Our Location</h3>
                     <a href="https://maps.app.goo.gl/SjpvNs9aaSX6T1jLA">
-                      <p className="text-muted-foreground">Al Zahra Techno Center<br/>Dubai - UAE</p>
+                      <p className="text-muted-foreground">Al Zahraa Techno Center - 101<br/>Dubai - UAE</p>
                     </a>
                   </div>
                 </div>
