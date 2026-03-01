@@ -31,7 +31,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
+        "fixed top-0 w-screen z-50 transition-all duration-300 border-b border-transparent",
         scrolled || location !== "/" 
           ? "bg-white/45 backdrop-blur-md shadow-sm border-border py-2 rounded-full" 
           : "bg-transparent py-4"

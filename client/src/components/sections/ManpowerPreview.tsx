@@ -7,7 +7,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export function ManpowerPreview() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -67,8 +67,8 @@ export function ManpowerPreview() {
             </p>
 
             <Link href="/construction">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Explore Our Construction & Contracting Services
+              <Button size="lg" className="bg-primary hover:bg-primary/90 w-[100%]">
+                Explore Our Contracting Services
               </Button>
             </Link>
           </motion.div>
